@@ -131,6 +131,12 @@ export async function startSession(tableId: string, data: SessionData) {
     }
 
     try {
+        await validateActiveShift();
+    } catch (error: any) {
+        return { success: false, error: error.message };
+    }
+
+    try {
         const table = await prisma.table.findUnique({
             where: { id: tableId },
             include: { currentSession: true }
@@ -209,20 +215,6 @@ export async function addSessionConsumption(sessionId: string, items: { productI
     const session = await auth();
     if (!session?.user) return { success: false, error: 'No autorizado' };
 
-    try {
-        await validateActiveShift();
-    } catch (error: any) {
-        return { success: false, error: error.message };
-    }
-
-    // Shift Validation
-    try {
-        await validateActiveShift();
-    } catch (error: any) {
-        return { success: false, error: error.message };
-    }
-
-    // Shift Validation
     try {
         await validateActiveShift();
     } catch (error: any) {
@@ -355,6 +347,12 @@ export async function endSession(sessionId: string, payments?: { amount: number,
     const session = await auth();
     if (!session?.user) {
         return { success: false, error: 'No autorizado' };
+    }
+
+    try {
+        await validateActiveShift();
+    } catch (error: any) {
+        return { success: false, error: error.message };
     }
 
     try {
