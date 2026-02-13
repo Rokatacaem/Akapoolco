@@ -4,6 +4,20 @@ import { prisma } from "@/lib/prisma"
 import { revalidatePath } from "next/cache"
 import { sendShiftReport } from "@/lib/email"
 
+// Helper to serialize Prisma objects (Decimal to Number)
+function serializeShift(shift: any) {
+    if (!shift) return null;
+    return {
+        ...shift,
+        initialAmount: Number(shift.initialAmount),
+        finalAmount: shift.finalAmount ? Number(shift.finalAmount) : null,
+        sales: shift.sales?.map((sale: any) => ({
+            ...sale,
+            total: Number(sale.total)
+        }))
+    };
+}
+
 export async function openShift(userId: string, initialAmount: number) {
     try {
         // Check if there is already an open shift (globally or for this user? Usually globally for one cash drawer)
@@ -33,7 +47,7 @@ export async function openShift(userId: string, initialAmount: number) {
             initialAmount
         });
 
-        return { success: true, shift }
+        return { success: true, shift: serializeShift(shift) }
     } catch (error) {
         console.error("Failed to open shift:", error)
         return { error: "Error al abrir turno" }
@@ -62,7 +76,7 @@ export async function closeShift(shiftId: string, userId: string, finalAmount: n
             totalSales: 0 // TODO: Calculate this if needed
         });
 
-        return { success: true, shift }
+        return { success: true, shift: serializeShift(shift) }
     } catch (error) {
         console.error("Failed to close shift:", error)
         return { error: "Error al cerrar turno" }
@@ -131,7 +145,7 @@ export async function getActiveShiftDetails() {
         })
 
         return {
-            shift: activeShift,
+            shift: serializeShift(activeShift),
             summary
         }
 
@@ -184,5 +198,5 @@ export async function getShiftSummary(shiftId: string) {
         }
     })
 
-    return { shift, summary }
+    return { shift: serializeShift(shift), summary }
 }

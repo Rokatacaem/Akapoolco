@@ -10,17 +10,10 @@ export default async function ShiftsPage() {
     const session = await auth()
     const shiftData = await getActiveShiftDetails()
 
-    // Serialize dates/decimals
-    const serializedData = shiftData ? {
-        shift: {
-            ...shiftData.shift,
-            initialAmount: Number(shiftData.shift.initialAmount),
-            finalAmount: shiftData.shift.finalAmount ? Number(shiftData.shift.finalAmount) : null,
-            // Don't send all sales if not needed, summary is enough for top view
-            sales: undefined
-        },
-        summary: shiftData.summary
-    } : null
+    // shiftData is already serialized by the server action
+    // We can pass it directly, or filter sales if needed for performance.
+    // For now, passing it directly is safest and cleanest.
+    const serializedData = shiftData;
 
     return (
         <div className="space-y-6">
