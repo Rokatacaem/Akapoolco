@@ -1,0 +1,46 @@
+Found 16 tables in database.
+
+🔗 ENLACES KIOSCO (Marcadores):
+
+🎱 Billar 1 (CARAMBOLA)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc5q6c00007y2zz6fgj9nq
+
+🎱 Billar 2 (CARAMBOLA)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc5zf300001323lc5xjut6
+
+🎱 Billar 3 (CARAMBOLA)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc66p30000xdjdh1wvtexd
+
+🎱 Billar 4 (CARAMBOLA)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc6dkf0001xdjdkgsm0l31
+
+🎱 Billar 5 (CARAMBOLA)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc6l9w00011323q3tfswse
+
+🎱 Billar 6 (CARAMBOLA)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc6sgq0002xdjd19wzss7x
+
+🎱 Bola 9-1 (NINE BALL)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc87c400037y2zs9q6v4eb
+
+🎱 Bola 9-2 (NINE BALL)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc8lih00047y2zlj967z6t
+
+🎱 Bola 9-3 (NINE BALL)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc8wpz0003xdjdttmum8q4
+
+🎱 Bola 9-4 (NINE BALL)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkucahp20004xdjd6k4ugfnb
+
+🎱 Bola 9-5 (NINE BALL)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkucaon000031323n1dh7w4d
+
+🎱 Pool 1 (POOL CHILENO)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc73ew00021323gv5nibc1
+
+🎱 Pool 2 (POOL CHILENO)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc7aml00017y2zygv64760
+
+🎱 Pool 3 (POOL CHILENO)
+   Link: https://club-santiago-bsm.vercel.app/table/cmkuc7lgi00027y2zx9d93g4v
+

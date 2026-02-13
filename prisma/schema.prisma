@@ -1,0 +1,510 @@
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum BillingProfile {
+  ACTIVE
+  HONORARY
+  EXCEPTION
+}
+
+enum UserRole {
+  ADMIN
+  STAFF
+  SUPERUSER
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+  DELETED
+}
+
+enum UserType {
+  SOCIO
+  SOCIO_FUNDADOR
+  CLIENTE
+}
+
+// Emums for Member (reusing names or creating new ones?)
+// Let's create specific Member enums to decouple completey
+enum MemberType {
+  SOCIO
+  SOCIO_FUNDADOR
+  CLIENTE
+}
+
+enum MemberStatus {
+  ACTIVE
+  INACTIVE
+  BANNED
+  DELETED
+}
+
+model Member {
+  id            String    @id @default(cuid())
+  
+  // Identity
+  name          String
+  email         String?   // Contact email, NOT login
+  rut           String?   @unique
+  phone         String?
+  image         String?
+  
+  // Business Status
+  type          MemberType @default(CLIENTE)
+  status        MemberStatus @default(ACTIVE)
+  billingProfile BillingProfile @default(ACTIVE)
+
+  // Financials
+  currentDebt   Decimal   @default(0) @db.Decimal(10, 2)
+  debtLimit     Decimal   @default(50000) @db.Decimal(10, 2)
+  debtStatus    Boolean   @default(false)
+  
+  membershipExpiresAt DateTime?
+
+  // Relationships
+  sales         Sale[]
+  sessionPlayers SessionPlayer[]
+  
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@map("members")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  
+  // Login / Access
+  email         String?   @unique
+  password      String?   
+  systemAccess  Boolean   @default(false)
+  image         String?
+  documentImage String?   // URL for ID Card / Document scan
+  role          UserRole  @default(STAFF)
+
+  // Personal Details
+  rut           String?   @unique // Optional to support legacy/migrated users without it initially
+  name          String    // Full name concatenated for display
+  firstName     String?
+  secondName    String?
+  lastNamePat   String?
+  lastNameMat   String?
+  nationality   String?
+  
+  status        UserStatus @default(ACTIVE)
+  type          UserType  @default(CLIENTE)
+  
+  // Custom Permissions (JSON) - Overrides Role defaults
+  // Format: { "MANAGE_PRODUCTS": true, "DELETE_USERS": false }
+  customPermissions Json?
+  
+  // Financials (Fiado)
+  currentDebt   Decimal   @default(0) @db.Decimal(10, 2)
+  debtLimit     Decimal   @default(50000) @db.Decimal(10, 2)
+  
+  // Member Details
+  billingProfile BillingProfile @default(ACTIVE)
+  debtStatus    Boolean   @default(false)
+  joinDate      DateTime  @default(now())
+  
+  // Membership Rule: Expiration date for user status
+  membershipExpiresAt DateTime?
+
+  sales         Sale[]
+  sessionPlayers SessionPlayer[]
+  
+  // Shift Management
+  startedShifts Shift[]   @relation("ShiftStarter")
+  endedShifts   Shift[]   @relation("ShiftEnder")
+  
+  // Stock Auditing
+  stockMovements StockMovement[]
+  
+  // Password Management
+  passwordChangeCount Int       @default(0)
+  lastPasswordChangeDate DateTime?
+  
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@map("users")
+}
+
+enum TableType {
+  POOL
+  CARAMBOLA
+  ARCADE
+  POOL_CHILENO
+  NINE_BALL
+  CARDS
+  SNOOKER
+}
+
+enum TableStatus {
+  AVAILABLE
+  OCCUPIED
+  RESERVED
+  CLEANING
+}
+
+model Table {
+  id          String      @id @default(cuid())
+  name        String      @unique
+  type        TableType   @default(POOL)
+  status      TableStatus @default(AVAILABLE)
+  
+  hourlyRate  Decimal     @default(0) @db.Decimal(10, 2)
+  priceMember Decimal     @default(0) @db.Decimal(10, 2)
+  priceClient Decimal     @default(0) @db.Decimal(10, 2)
+  
+  // Camera Streams
+  cameraTopUrl   String?
+  cameraFrontUrl String?
+  
+  // Relationship to the active session if any
+  currentSessionId String? @unique
+  currentSession   Session? @relation("CurrentTableSession", fields: [currentSessionId], references: [id])
+  
+  // History
+  sessions    Session[] @relation("TableSessions")
+
+  @@map("tables")
+}
+
+model Session {
+  id          String    @id @default(cuid())
+  
+  tableId     String
+  table       Table     @relation("TableSessions", fields: [tableId], references: [id])
+  
+  activeTable Table?    @relation("CurrentTableSession")
+  
+  startTime   DateTime  @default(now())
+  endTime     DateTime?
+  
+  status      String    @default("ACTIVE") // ACTIVE, CLOSED, PAUSED
+  
+  // Players stored as JSON to allow flexible definitions (names, IDs if members)
+  // DEPRECATED for logic: use sessionPlayers constraint for active tracking
+  players     Json?
+
+  sessionPlayers SessionPlayer[]
+
+  // Consumption orders (TAB) - list of items added to the table
+  orders      Json?
+  
+  // Kiosk Mode State
+  gameState   Json?
+  
+  // Kiosk Orders
+  tableOrders TableOrder[]
+
+  // Training Mode
+  isTraining  Boolean   @default(false)
+  
+  // Financials
+  totalAmount Decimal   @default(0) @db.Decimal(10, 2)
+  durationMin Int       @default(0)
+  
+  sales       Sale[]
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@map("sessions")
+}
+
+model SessionPlayer {
+  id          String    @id @default(cuid())
+  
+  sessionId   String
+  session     Session   @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  
+  userId      String?   // Nullable for "Guest" players if we support them, but mostly for Registered Users
+  user        User?     @relation(fields: [userId], references: [id])
+  
+  // New Relation to Member
+  memberId    String?
+  member      Member?   @relation(fields: [memberId], references: [id])
+  
+  guestName   String?   // If not a registered user
+  
+  startTime   DateTime  @default(now())
+  endTime     DateTime?
+  
+  status      String    @default("ACTIVE") // ACTIVE, LEEFT
+  
+  // Financial snapshot for this player
+  hourlyRate  Decimal   @default(0) @db.Decimal(10, 2)
+  totalCost   Decimal   @default(0) @db.Decimal(10, 2)
+  
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  tableOrders TableOrder[]
+
+  @@map("session_players")
+}
+
+enum StockMovementType {
+  PURCHASE
+  ADJUSTMENT
+  RETURN
+}
+
+model Product {
+  id          String    @id @default(cuid())
+  name        String
+  category    String?
+  
+  priceMember Decimal   @default(0) @db.Decimal(10, 2)
+  priceClient Decimal   @default(0) @db.Decimal(10, 2)
+  
+  stock       Int       @default(0)
+  stockControl Boolean  @default(false)
+  
+  image       String?
+  
+  printCategory PrintCategory @default(NONE)
+
+  stockMovements StockMovement[]
+  recipes       Recipe[]
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@map("products")
+}
+
+model StockMovement {
+  id          String            @id @default(cuid())
+  productId   String
+  product     Product           @relation(fields: [productId], references: [id])
+  
+  type        StockMovementType
+  quantity    Int
+  reason      String?
+  
+  userId      String?           // User performing the action
+  user        User?             @relation(fields: [userId], references: [id])
+
+  createdAt   DateTime          @default(now())
+
+  @@map("stock_movements")
+}
+
+model Shift {
+  id            String    @id @default(cuid())
+  
+  openedAt      DateTime  @default(now())
+  closedAt      DateTime?
+  
+  initialAmount Decimal   @default(0) @db.Decimal(10, 2)
+  finalAmount   Decimal?  @db.Decimal(10, 2)
+  
+  status        String    @default("OPEN") // OPEN, CLOSED
+  
+  startUserId   String
+  startUser     User      @relation("ShiftStarter", fields: [startUserId], references: [id])
+  
+  endUserId     String?
+  endUser       User?     @relation("ShiftEnder", fields: [endUserId], references: [id])
+  
+  sales         Sale[]
+
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@map("shifts")
+}
+
+model Sale {
+  id          String    @id @default(cuid())
+  
+  // Optional link to a session (table consumption)
+  sessionId   String?
+  session     Session?  @relation(fields: [sessionId], references: [id])
+  
+  // Buyer (if Member or tracked User)
+  userId      String?
+  user        User?     @relation(fields: [userId], references: [id])
+  
+  // New Relaton to Member
+  memberId    String?
+  member      Member?   @relation(fields: [memberId], references: [id])
+  
+  // Shift Context
+  shiftId     String?
+  shift       Shift?    @relation(fields: [shiftId], references: [id])
+
+  total       Decimal   @db.Decimal(10, 2)
+  method      String    // CASH, CARD, TRANSFER, ACCOUNT (Fiado)
+  
+  type        SaleType  @default(CONSUMPTION)
+  metadata    Json?     // Extra details (e.g. "Mes Pagado: Enero")
+  
+  items       Json      // Snapshot of items: [{ productId, name, price, quantity }]
+  
+  // Historical Data Flag (Legacy Import)
+  isHistorical Boolean  @default(false)
+  
+  createdAt   DateTime  @default(now())
+  
+  taxDocument TaxDocument?
+
+  @@map("sales")
+}
+
+enum SaleType {
+  CONSUMPTION
+  DEBT_PAYMENT
+  MEMBERSHIP
+}
+
+model WaitingList {
+  id          String    @id @default(cuid())
+  
+  name        String    // Customer Name
+  gameType    TableType
+  
+  status      String    @default("WAITING") // WAITING, NOTIFIED, SEATED, CANCELLED, NO_SHOW
+  
+  phone       String?
+  partySize   Int       @default(1)
+  
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@map("waiting_list")
+}
+
+// --- KIOSK MODE & COMMAND SYSTEM ---
+
+enum PrintCategory {
+  BAR
+  KITCHEN
+  NONE
+}
+
+enum TicketStatus {
+  PENDING
+  PRINTING
+  PRINTED
+  ERROR
+}
+
+model AdBanner {
+  id        String   @id @default(cuid())
+  title     String // Título para gestión interna
+  imageUrl  String // URL en Vercel Blob
+  linkUrl   String? // Opcional: QR o link info
+  active    Boolean  @default(true)
+  order     Int      @default(0) // Para ordenar el carrusel
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("ad_banners")
+}
+
+model TableOrder {
+  id        String   @id @default(cuid())
+  
+  sessionId String
+  session   Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  
+  // Facturación Granular: Relación opcional con un jugador específico
+  billedToPlayerId String?
+  billedToPlayer   SessionPlayer? @relation(fields: [billedToPlayerId], references: [id])
+  
+  items     Json     // Estructura: [{ productId, name, price, quantity, note }]
+  
+  status    String   @default("PENDING") // PENDING, CONFIRMED, DELIVERED, CANCELLED
+  total     Decimal  @db.Decimal(10, 2)
+  
+  // Relación con Tickets Generados
+  tickets   OrderTicket[]
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("table_orders")
+}
+
+model OrderTicket {
+  id            String        @id @default(cuid())
+  
+  tableOrderId  String
+  tableOrder    TableOrder    @relation(fields: [tableOrderId], references: [id], onDelete: Cascade)
+  
+  category      PrintCategory // BAR o KITCHEN
+  content       Json          // Items filtrados para esta categoría
+  status        TicketStatus  @default(PENDING)
+  
+  // Metadatos para auditoría
+  printedAt     DateTime?
+  printedByDevice String?
+  
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@map("order_tickets")
+}
+
+// --- AKAPOOLCO MODULES ---
+
+model Ingredient {
+  id            String    @id @default(cuid())
+  name          String
+  unit          String    // kg, lt, un
+  cost          Decimal   @default(0) @db.Decimal(10, 2)
+  lossPercentage Decimal  @default(0) @db.Decimal(5, 2)
+  currentStock  Decimal   @default(0) @db.Decimal(10, 3) 
+  
+  updatedAt     DateTime  @updatedAt
+  
+  recipes       Recipe[]
+  
+  @@map("ingredients")
+}
+
+model Recipe {
+  id          String     @id @default(cuid())
+  productId   String     
+  product     Product    @relation(fields: [productId], references: [id])
+  
+  ingredientId String
+  ingredient   Ingredient @relation(fields: [ingredientId], references: [id])
+  
+  quantity    Decimal    @db.Decimal(10, 3) 
+  
+  @@unique([productId, ingredientId])
+  @@map("recipes")
+}
+
+model TaxDocument {
+  id          String   @id @default(cuid())
+  saleId      String   @unique
+  sale        Sale     @relation(fields: [saleId], references: [id])
+  
+  dteType     Int      // 39 (Boleta), 33 (Factura), 61 (Nota Crédito)
+  folio       Int?
+  status      String   // EMITIDA, RECHAZADA, PENDIENTE
+  pdfUrl      String?
+  xmlContent  String?  @db.Text
+  
+  providerId  String?
+  
+  issuedAt    DateTime @default(now())
+  
+  @@map("tax_documents")
+}

@@ -1,0 +1,667 @@
+
+> akapoolco@0.1.0 lint
+> eslint --quiet
+
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\api\debug-billar\route.ts
+  41:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\dashboard\cockpit\cockpit-client-v2.tsx
+  21:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\dashboard\cockpit\page.tsx
+  25:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\dashboard\kiosk-links\page.tsx
+  62:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\dashboard\page.tsx
+  55:61  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\dashboard\products\product-dialog.tsx
+  75:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\dashboard\products\stock-dialog.tsx
+  70:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  88:50  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\dashboard\shifts\shift-client.tsx
+  30:12  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  53:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  69:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  89:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\lib\actions-ads.ts
+  44:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\lib\actions-card-tables.ts
+  242:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\lib\actions-dashboard.ts
+  75:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\lib\actions-kiosk.ts
+  101:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  116:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  127:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  197:68  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\lib\actions-pos.ts
+   61:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   78:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  128:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  135:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\app\lib\actions-shifts.ts
+  107:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  162:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\auth.config.ts
+  24:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\admin\HistoricalUploadDialog.tsx
+  95:98   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  95:105  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\dashboard\QuickSaleWidget.tsx
+  25:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  31:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\ActiveScreen.tsx
+  15:14  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  16:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\KioskManager.tsx
+  10:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\PrintQueueManager.tsx
+  19:31  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-explicit-any
+  24:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\PrintQueueManager.tsx:24:9
+  22 |
+  23 |     useEffect(() => {
+> 24 |         fetchTickets();
+     |         ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  25 |         const interval = setInterval(fetchTickets, 10000); // Poll every 10s
+  26 |         return () => clearInterval(interval);
+  27 |     }, []);  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\scoreboard\CaromScoreboard.tsx
+   36:13   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\scoreboard\CaromScoreboard.tsx:36:13
+  34 |
+  35 |         if (isFreshGame) {
+> 36 |             setShowSettings(true);
+     |             ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  37 |         }
+  38 |     }, []); // Run on mount only to avoid annoyance? Or dependency on state?
+  39 |     // If we depend on state it might pop up after a reset. Which is good!  react-hooks/set-state-in-effect
+  254:112  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\scoreboard\ChileanPoolScoreboard.tsx
+  374:126  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\scoreboard\GameScoreboard.tsx
+  14:19  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  43:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\scoreboard\GameScoreboard.tsx:43:17
+  41 |             // e.g. Table is CHILEAN but State is POOL
+  42 |             if ((tableType === 'POOL_CHILENO' || tableType === 'CHILEAN') && loadedState.gameType !== 'CHILEAN') {
+> 43 |                 setGameState({
+     |                 ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  44 |                     gameType: 'CHILEAN',
+  45 |                     availableBalls: Array.from({ length: 15 }, (_, i) => i + 1), // 1-15
+  46 |                     p1Balls: [],  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\scoreboard\ShotClock.tsx
+  21:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\scoreboard\ShotClock.tsx:21:9
+  19 |     // Sync external running state
+  20 |     useEffect(() => {
+> 21 |         setIsPaused(!isRunning);
+     |         ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  22 |     }, [isRunning]);
+  23 |
+  24 |     // Timer Logic                                                           react-hooks/set-state-in-effect
+  44:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\kiosk\scoreboard\ShotClock.tsx:44:9
+  42 |     // Reset when initialSeconds changes (new turn)
+  43 |     useEffect(() => {
+> 44 |         setSecondsLeft(initialSeconds);
+     |         ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  45 |         setIsPaused(!isRunning);
+  46 |     }, [initialSeconds, isRunning]);
+  47 |  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\members\edit-member-dialog.tsx
+  47:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\members\members-table.tsx
+  88:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\members\members-table.tsx:88:9
+  86 |     // Reset page when filter changes
+  87 |     useEffect(() => {
+> 88 |         setCurrentPage(1);
+     |         ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  89 |     }, [searchTerm, filterType, filterStatus]);
+  90 |
+  91 |     return (  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\pos\checkout-modal.tsx
+  20:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\shifts\DebtPaymentDialog.tsx
+  18:19  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  26:56  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  27:54  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  32:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\shifts\DebtPaymentDialog.tsx:32:13
+  30 |     useEffect(() => {
+  31 |         if (isOpen && initialUser) {
+> 32 |             setSelectedUser(initialUser);
+     |             ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  33 |         } else if (isOpen && !initialUser) {
+  34 |             // Optional: clear if no initial user, so previous state doesn't persist if we reuse the component instance?
+  35 |             // But if we want to keep state, maybe not.   react-hooks/set-state-in-effect
+  55:37  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\shifts\MembershipPaymentDialog.tsx
+  28:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  29:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\tables\AddPlayerDialog.tsx
+  24:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  38:40  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\tables\EditTableDialog.tsx
+  26:12  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  40:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\tables\EditTableDialog.tsx:40:13
+  38 |     useEffect(() => {
+  39 |         if (table) {
+> 40 |             setName(table.name);
+     |             ^^^^^^^ Avoid calling setState() directly within an effect
+  41 |             setType(table.type as TableType);
+  42 |             setPriceMember(table.priceMember?.toString() || '0');
+  43 |             setPriceClient(table.priceClient?.toString() || '0');  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\tables\TableCard.tsx
+  49:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\components\tables\TableCard.tsx:49:17
+  47 |         if (autoOpen) {
+  48 |             if (isAvailable) {
+> 49 |                 setShowOpenDialog(true);
+     |                 ^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  50 |             } else if (table.currentSession) {
+  51 |                 setShowControlSheet(true);
+  52 |             }  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\backups\backup_referee_20260206_1215\src\hooks\useTableSync.ts
+   9:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  10:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:32  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\prisma\seed-admin.ts
+  161:17  error  Include a description after the "@ts-expect-error" directive to explain why the @ts-expect-error is necessary. The description must be 3 characters or longer  @typescript-eslint/ban-ts-comment
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\scripts\check_env.js
+  1:1  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\scripts\debug-db.ts
+  12:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\scripts\debug-user-creation.ts
+  57:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\scripts\debug_login.js
+  1:26  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:16  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  3:1   error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\scripts\migrate-users-to-members.ts
+  66:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  67:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\scripts\run_migration.ts
+  56:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  57:49  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  89:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\scripts\test-rules.ts
+  29:59  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\scripts\verify-changes.ts
+  2:26  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\api\debug-billar\route.ts
+  41:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\cockpit\cockpit-client-v2.tsx
+  16:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\cockpit\page.tsx
+  25:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\kiosk-links\page.tsx
+  62:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\kitchen\ingredients-manager.tsx
+  44:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\kitchen\ingredients-manager.tsx:44:9
+  42 |
+  43 |     useEffect(() => {
+> 44 |         setMounted(true)
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  45 |     }, [])
+  46 |
+  47 |     const filteredIngredients = initialIngredients.filter(i =>  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\kitchen\recipe-manager.tsx
+  50:9   error  Error: Cannot access variable before it is declared
+
+`loadProducts` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\kitchen\recipe-manager.tsx:50:9
+  48 |
+  49 |     useEffect(() => {
+> 50 |         loadProducts()
+     |         ^^^^^^^^^^^^ `loadProducts` accessed before it is declared
+  51 |     }, [])
+  52 |
+  53 |     useEffect(() => {
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\kitchen\recipe-manager.tsx:88:5
+  86 |     }, [selectedIngredientId, netQuantity, ingredients])
+  87 |
+> 88 |     async function loadProducts() {
+     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 89 |         const res = await getProducts()
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 90 |         setProducts(res)
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 91 |     }
+     | ^^^^^^ `loadProducts` is declared here
+  92 |
+  93 |     async function loadRecipe(id: string) {
+  94 |         setLoading(true)                                                                                                                                                                                                                                                                      react-hooks/immutability
+  55:13  error  Error: Cannot access variable before it is declared
+
+`loadRecipe` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\kitchen\recipe-manager.tsx:55:13
+  53 |     useEffect(() => {
+  54 |         if (selectedProductId) {
+> 55 |             loadRecipe(selectedProductId)
+     |             ^^^^^^^^^^ `loadRecipe` accessed before it is declared
+  56 |         } else {
+  57 |             setRecipeItems([])
+  58 |         }
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\kitchen\recipe-manager.tsx:93:5
+   91 |     }
+   92 |
+>  93 |     async function loadRecipe(id: string) {
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  94 |         setLoading(true)
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+>  95 |         const res = await getRecipeIngredients(id) as unknown as RecipeItem[]
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+>  96 |         setRecipeItems(res || [])
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+>  97 |         setLoading(false)
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+>  98 |     }
+      | ^^^^^^ `loadRecipe` is declared here
+   99 |
+  100 |     async function handleAddIngredient() {
+  101 |         if (!selectedProductId || !selectedIngredientId || !calculatedGross) return  react-hooks/immutability
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\page.tsx
+  55:61  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\products\product-dialog.tsx
+  75:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\products\stock-dialog.tsx
+  70:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  88:50  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\dashboard\shifts\shift-client.tsx
+  30:12  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  53:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  69:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  89:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\lib\actions-ads.ts
+  44:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\lib\actions-card-tables.ts
+  242:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\lib\actions-dashboard.ts
+  75:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\lib\actions-kiosk.ts
+  101:37   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  116:42   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  127:46   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  197:68   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  221:105  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\lib\actions-pos.ts
+   61:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   78:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  128:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  135:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\app\lib\actions-shifts.ts
+  107:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  162:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\auth.config.ts
+  24:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\admin\HistoricalUploadDialog.tsx
+  95:98   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  95:105  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\dashboard\QuickSaleWidget.tsx
+  25:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  31:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\ActiveScreen.tsx
+  17:14  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  18:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\KioskManager.tsx
+  10:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\PrintQueueManager.tsx
+  19:31  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-explicit-any
+  24:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\PrintQueueManager.tsx:24:9
+  22 |
+  23 |     useEffect(() => {
+> 24 |         fetchTickets();
+     |         ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  25 |         const interval = setInterval(fetchTickets, 10000); // Poll every 10s
+  26 |         return () => clearInterval(interval);
+  27 |     }, []);  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\scoreboard\ChileanPoolScoreboard.tsx
+  374:126  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\scoreboard\GameScoreboard.tsx
+  14:19  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  43:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\scoreboard\GameScoreboard.tsx:43:17
+  41 |             // e.g. Table is CHILEAN but State is POOL
+  42 |             if ((tableType === 'POOL_CHILENO' || tableType === 'CHILEAN') && loadedState.gameType !== 'CHILEAN') {
+> 43 |                 setGameState({
+     |                 ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  44 |                     gameType: 'CHILEAN',
+  45 |                     availableBalls: Array.from({ length: 15 }, (_, i) => i + 1), // 1-15
+  46 |                     p1Balls: [],  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\scoreboard\ShotClock.tsx
+  21:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\scoreboard\ShotClock.tsx:21:9
+  19 |     // Sync external running state
+  20 |     useEffect(() => {
+> 21 |         setIsPaused(!isRunning);
+     |         ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  22 |     }, [isRunning]);
+  23 |
+  24 |     // Timer Logic                                                           react-hooks/set-state-in-effect
+  44:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\kiosk\scoreboard\ShotClock.tsx:44:9
+  42 |     // Reset when initialSeconds changes (new turn)
+  43 |     useEffect(() => {
+> 44 |         setSecondsLeft(initialSeconds);
+     |         ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  45 |         setIsPaused(!isRunning);
+  46 |     }, [initialSeconds, isRunning]);
+  47 |  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\members\edit-member-dialog.tsx
+  47:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\members\members-table.tsx
+  88:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\members\members-table.tsx:88:9
+  86 |     // Reset page when filter changes
+  87 |     useEffect(() => {
+> 88 |         setCurrentPage(1);
+     |         ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  89 |     }, [searchTerm, filterType, filterStatus]);
+  90 |
+  91 |     return (  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\pos\checkout-modal.tsx
+  20:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\referee\MatchReferee.tsx
+  10:14  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\referee\RefereeScoreboard.tsx
+  32:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\referee\RefereeScoreboard.tsx:32:13
+  30 |     useEffect(() => {
+  31 |         if (state.timerStatus === 'idle') {
+> 32 |             setTimeLeft(state.timerSettings?.limitSeconds || 40);
+     |             ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  33 |         }
+  34 |     }, [state.timerStatus, state.activePlayer, state.innings, state.timerSettings?.limitSeconds]);
+  35 |  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\referee\ShotClock.tsx
+   40:68  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-explicit-any
+  111:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\referee\ShotClock.tsx:111:13
+  109 |     useEffect(() => {
+  110 |         if (resetTrigger !== undefined) {
+> 111 |             setSeconds(initialSeconds);
+      |             ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  112 |             setStatus('idle');
+  113 |         }
+  114 |     }, [resetTrigger, initialSeconds]);  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\shifts\DebtPaymentDialog.tsx
+  18:19  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  26:56  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  27:54  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  32:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\shifts\DebtPaymentDialog.tsx:32:13
+  30 |     useEffect(() => {
+  31 |         if (isOpen && initialUser) {
+> 32 |             setSelectedUser(initialUser);
+     |             ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  33 |         } else if (isOpen && !initialUser) {
+  34 |             // Optional: clear if no initial user, so previous state doesn't persist if we reuse the component instance?
+  35 |             // But if we want to keep state, maybe not.   react-hooks/set-state-in-effect
+  55:37  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\shifts\MembershipPaymentDialog.tsx
+  28:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  29:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\tables\AddPlayerDialog.tsx
+  24:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  38:40  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\tables\EditTableDialog.tsx
+  26:12  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  40:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\tables\EditTableDialog.tsx:40:13
+  38 |     useEffect(() => {
+  39 |         if (table) {
+> 40 |             setName(table.name);
+     |             ^^^^^^^ Avoid calling setState() directly within an effect
+  41 |             setType(table.type as TableType);
+  42 |             setPriceMember(table.priceMember?.toString() || '0');
+  43 |             setPriceClient(table.priceClient?.toString() || '0');  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\tables\TableCard.tsx
+  49:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\components\tables\TableCard.tsx:49:17
+  47 |         if (autoOpen) {
+  48 |             if (isAvailable) {
+> 49 |                 setShowOpenDialog(true);
+     |                 ^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  50 |             } else if (table.currentSession) {
+  51 |                 setShowControlSheet(true);
+  52 |             }  react-hooks/set-state-in-effect
+
+C:\Users\rokat\OneDrive\Proyectos\Akapoolco\src\hooks\useTableSync.ts
+   9:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  10:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:32  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 146 problems (146 errors, 0 warnings)
+
